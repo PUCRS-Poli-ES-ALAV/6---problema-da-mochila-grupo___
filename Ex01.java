@@ -125,30 +125,30 @@ public class Ex01 {
         int[] f = new int[n+1];
         
         long t1 = System.nanoTime();
-        System.out.println("res: " + FIBO_REC(n));
+        System.out.println("resultado (rec): " + FIBO_REC(n));
         long t2 = System.nanoTime();
-        System.out.println("t: " + (t2-t1));
-        System.out.println("ite:" + iteracoes);
-        System.out.println("ins:" + instrucoes);
+        System.out.println("tempo: " + (t2-t1) + "ns");
+        System.out.println("iteracoes:" + iteracoes);
+        System.out.println("instrucoes:" + instrucoes);
         instrucoes = 0;
         iteracoes = 0;
         System.out.println();
 
         t1 = System.nanoTime();
-        System.out.println("res: " + FIBO(n));
+        System.out.println("resultado (fibo): " + FIBO(n));
         t2 = System.nanoTime();
-        System.out.println("t: " + (t2-t1));
-        System.out.println("ite:" + iteracoes);
-        System.out.println("ins:" + instrucoes);
+        System.out.println("tempo: " + (t2-t1) + "ns");
+        System.out.println("iteracoes:" + iteracoes);
+        System.out.println("instrucoes:" + instrucoes);
         instrucoes = 0;
         iteracoes = 0;
         System.out.println();
 
         t1 = System.nanoTime();
-        System.out.println("res: " + MEMOIZED_FIBO(f, n));
+        System.out.println("resultado (memoized): " + MEMOIZED_FIBO(f, n));
         t2 = System.nanoTime();
-        System.out.println("t: " + (t2-t1));
-        System.out.println("ite:" + iteracoes);
-        System.out.println("ins:" + instrucoes);
+        System.out.println("tempo: " + (t2-t1) + "ns");
+        System.out.println("iteracoes:" + iteracoes);
+        System.out.println("instrucoes:" + instrucoes);
     }
 }
